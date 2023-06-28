@@ -12,6 +12,7 @@ RUN apt install -y -qq --no-install-recommends \
     python3 \
     software-properties-common \
     sudo \
+    file \
     xz-utils && npm i -g n && n latest
 
 WORKDIR /root
