@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninteractive
+RUN echo this is here only to force a new image to be built https://github.com/gautam1168/build-d8/issues/1#issuecomment-1649993859
 RUN apt update -y -qq && apt upgrade -y -qq
 RUN apt install -y -qq --no-install-recommends \
     ca-certificates \
