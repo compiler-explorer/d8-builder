@@ -14,7 +14,9 @@ RUN apt install -y -qq --no-install-recommends \
     software-properties-common \
     sudo \
     file \
-    xz-utils && npm i -g n && n latest
+    xz-utils && \
+    npm i -g n && \
+    n latest
 
 WORKDIR /root
 ENV PATH=${PATH}:/root/depot_tools:/root/v8/tools/dev
